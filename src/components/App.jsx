@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 
 import Section from './Section/Section';
 import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
@@ -16,6 +16,8 @@ const App = () => {
         return setNeutral(neutral + 1);
       case 'bad':
         return setBad(bad + 1);
+      default:
+        return;
     }
   };
 
